@@ -4,24 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title> forms one </title>
-    <style>
-        body{
-            background-color:#414141;
-            color:#fff;
-        }
-    </style>
+    
 </head>
 <body>
-    <h1>Forms in HTMl</h1>
-    <Form action="url" method="get"accept-charset="UTF-8" autocomplete="off" enctype="" >
-        <label for="fname">first name</label><br>
-        <input type="text" placeholder="first name" name="" id="fname">
-
-        <label for="lname">last name</label><br>
-        <input type="text" placeholder="last name"
-        name=""id="lname">
-        <button type="submit">pay</button>
-      
-    </Form>
+    <h1>Registration Forn</h1>
+    <form action="/action.php">
+        <input type="text" placeholder="Username">
+        <br>
+        <br>
+        <input type="password" placeholder="password">
+        <br> 
+        <h2>Select your class </h2>
+        <label for="01">
+        <input type="radio" value="class XI" name="class" id="01">class XI
+        </label>
+        <br>
+        <br>
+        <label for="02">
+        <input type="radio" value="class XII" name="class"id="02">class XII
+        </label><br>
+        <h3>select your fav subject</h3>
+        <label for="math">Math
+            <input type="checkbox" value="math"name="subject"id="02">
+        </label><br>
+        <label for="phy">Physics
+            <input type="checkbox" value="phy"name="subject"id="03">
+        </label><br>
+        <label for="chem">Chemistry
+            <input type="checkbox" value="chem"name="subject"id="04">
+        </label><br>
+        <label for="Bio">Biology
+            <input type="checkbox" value="Bio"name="subject"id="05">
+        </label><br>
+        <h4>select your city</h4>
+        <select name="city">
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Patna">Patna</option>
+            <option value="Banglore">Banglore</option>
+        </select><br><br>
+        <textarea name="feedback"placeholder="please give your feedback here"  id="01" cols="20" rows="5"></textarea>
+    </form>
 </body>
 </html>
